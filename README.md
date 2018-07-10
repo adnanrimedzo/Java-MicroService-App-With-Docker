@@ -41,7 +41,6 @@ Once all the services are up, the following URLs will be available
 Address | Description
 --- | ---
 http://localhost:8761 | Eureka service.
-
 http://localhost:9090/swagger-ui.html | Zuul api gateway route definitions
 
 
@@ -72,5 +71,7 @@ curl -X GET --header 'Accept: application/json' 'http://localhost:9090/api/accou
 
 ### References:
 https://exampledriven.wordpress.com/2016/06/24/spring-boot-docker-example/
+
 https://github.com/piomin/sample-spring-microservices-advanced
+
 https://github.com/piomin/sample-spring-microservices
