@@ -8,7 +8,7 @@ Features :
 - Docker in a multi module project
 - docker-compose definition
 
-How to run this example :
+How to run this application :
 
 ```sh
 ## build docker images
@@ -20,23 +20,23 @@ docker images
 ##start up all instances
 docker-compose up
 
-##starts a 2nd instance of echo-service
+##starts a 2nd instance of account-service
 docker-compose scale account-service=2
 ```
 
 ## Useful docker commands
 ```sh
-##Starting multiple echo services
+##Starting multiple account services
 docker-compose scale account-service=3
 
 ##Replace a running container with the latest version (during development)
 mvn install
-docker-compose stop echo-service
-docker-compose up -d echo-service
+docker-compose stop account-service
+docker-compose up -d account-service
 ```
 
 Once all the services are up, the following URLs will be available 
-(please wait until embedded mongodb download and services regitrations)
+(please wait until embedded mongodb download process and services registrations)
 
 Address | Description
 --- | ---
