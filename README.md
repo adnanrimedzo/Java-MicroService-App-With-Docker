@@ -40,12 +40,12 @@ Once all the services are up, the following URLs will be available
 
 Address | Description
 --- | ---
+http://localhost:8761 | Eureka service.
 
-`http://localhost:8761 | Eureka service.
-http://localhost:9090/swagger-ui.html | Zuul api gateway route definitions`
+http://localhost:9090/swagger-ui.html | Zuul api gateway route definitions
 
 
-##Usage With Curl
+## Usage With Curl
 
 **Create account with zero balance**
 ```sh
@@ -60,7 +60,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 curl -X GET --header 'Accept: application/json' 'http://localhost:9090/api/account/'
 ```
 
-##Usage With Swagger UI:
+## Usage With Swagger UI:
 
 **Create account:**
 `http://localhost:9090/swagger-ui.html#!/account-controller/addUsingPOST
@@ -70,7 +70,7 @@ curl -X GET --header 'Accept: application/json' 'http://localhost:9090/api/accou
 `http://localhost:9090/swagger-ui.html#!/account-controller/findAllUsingGET
 `
 
-###References:
+### References:
 https://exampledriven.wordpress.com/2016/06/24/spring-boot-docker-example/
 https://github.com/piomin/sample-spring-microservices-advanced
 https://github.com/piomin/sample-spring-microservices
