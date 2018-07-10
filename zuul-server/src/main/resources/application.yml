@@ -1,0 +1,25 @@
+server:
+  port: ${server_port:9090}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eureka_url:http://eureka-server:8761/eureka/}
+
+zuul:
+  prefix: /api
+  routes:
+    account-service:
+      path: /account/**
+      serviceId: account-service
+    transaction-service:
+      path: /transaction/**
+      serviceId: transaction-service
+
+spring:
+  application:
+    name: zuul-server
+
+management:
+  security:
+    enabled: false
