@@ -1,4 +1,4 @@
-# BlueHarvest Case Study
+# Small MicroService Application With Docker
 
 Case Study for BlueHarvest
 
