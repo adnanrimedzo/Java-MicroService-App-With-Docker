@@ -1,7 +1,5 @@
 # Small MicroService Application With Docker
 
-Case Study for BlueHarvest
-
 Features :
 - Maven docker plugin
 - build images without dockerfile
